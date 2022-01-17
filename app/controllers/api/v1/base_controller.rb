@@ -4,10 +4,10 @@ module Api
 
       private
 
-      def render_success_response(resource, serializer)
+      def render_success_response(resource, serializer, status= :ok)
         render json: {
           "#{resource_key(resource).to_sym}": serialized_data(resource)
-        }, status: :ok
+        }, status: status
       end
 
       def render_error_response(resource)

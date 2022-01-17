@@ -10,7 +10,7 @@ module Api
       def create
         course = Course.new(course_params)
         if course.save
-          render_success_response(course, CourseSerializer)
+          render_success_response(course, CourseSerializer, :created)
         else
           render_error_response(course)
         end

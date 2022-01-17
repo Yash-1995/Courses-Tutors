@@ -5,7 +5,7 @@ module Api
       def create
         tutor = Tutor.new(tutor_params)
         if tutor.save
-          render_success_response(tutor, TutorSerializer)
+          render_success_response(tutor, TutorSerializer, :created)
         else
           render_error_response(tutor)
         end
