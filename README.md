@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Postman Json import File
+https://www.getpostman.com/collections/1cada4a31dcd10335369
+
+Postman Collection Documentation
+https://documenter.getpostman.com/view/14406267/UVXkpFTD
+
